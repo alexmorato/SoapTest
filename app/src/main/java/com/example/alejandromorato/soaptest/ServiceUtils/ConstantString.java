@@ -16,4 +16,6 @@ public class ConstantString {
     public final static String F_TO_C_SOAP_ACTION = SOAP_ACTION + F_TO_C_METHOD_NAME;
     public final static String C_TO_F_SOAP_ACTION = SOAP_ACTION + C_TO_F_METHOD_NAME;
 
+    public final static String NEW_WORD = "foo";
+    public final static String NEW_WORD2 = "foo2";
 }
