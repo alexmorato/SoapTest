@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SoapTest</string>
+    <string name="f_to_c">Farenheit to Celsius</string>
+    <string name="c_to_f">Celsius to Farenheit</string>
+</resources>
