@@ -1,5 +1,6 @@
 package com.example.alejandromorato.soaptest;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.app.Activity;
@@ -9,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.alejandromorato.soaptest.AsyncTask.ConvertTemperatureTask;
+import com.example.alejandromorato.soaptest.DecorAR.Activities.DecorARActity;
 import com.example.alejandromorato.soaptest.ServiceUtils.ConstantString;
 
 public class MainActivity extends Activity  {
@@ -16,6 +18,7 @@ public class MainActivity extends Activity  {
     private TextView textConverted;
     private View btnFToC;
     private View btnCToF;
+    private View btnToDecorAR;
     private EditText input;
     private int convertStyle;
 
@@ -26,12 +29,14 @@ public class MainActivity extends Activity  {
 
         btnCToF = (View) findViewById(R.id.btn_c_to_f);
         btnFToC = (View) findViewById(R.id.btn_f_to_c);
+        btnToDecorAR = (View) findViewById(R.id.button_ir_a_DecoAR);
         textConverted = (TextView) findViewById(R.id.txt_converted);
         input = (EditText) findViewById(R.id.txt_temp);
 
         // set event listeners
         btnCToF.setOnClickListener(onCToFClick());
         btnFToC.setOnClickListener(onFtoCClick());
+        btnToDecorAR.setOnClickListener(onToDecorARCClick());
     }
 
     private OnClickListener onCToFClick() {
@@ -57,6 +62,21 @@ public class MainActivity extends Activity  {
                 convertStyle = 1;
             }
         };
+    }
+
+    private OnClickListener onToDecorARCClick() {
+        return new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                startDecorARActivy();
+            }
+        };
+    }
+
+    private void startDecorARActivy() {
+        Intent intent = new Intent(this, DecorARActity.class);
+        startActivity(intent);
     }
 
     //create and execute asynctask to get response from W3school server
