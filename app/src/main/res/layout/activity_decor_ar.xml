@@ -47,14 +47,14 @@
             android:id="@+id/textView_ResultSuma" />
 
         <Button
-            android:text="Hello World"
+            android:text="Get UserSimple()"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button_DecorAR_Hello" />
+            android:id="@+id/button_DecorAR_GetSimple" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_resultHello" />
+            android:id="@+id/textView_resultGet" />
     </LinearLayout>
 </RelativeLayout>

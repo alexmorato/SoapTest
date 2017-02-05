@@ -1,9 +1,5 @@
 package com.example.alejandromorato.soaptest.DecorAR;
 
-/**
- * Created by alejandro.morato on 26/01/2017.
- */
-
 public class SoapConfig {
 
     public final static String SOAP_ACTION = "http://tempuri.org/";
@@ -14,8 +10,8 @@ public class SoapConfig {
     public final static String METHOD_ADD_PARAM_A = "a";
     public final static String METHOD_ADD_PARAM_B = "b";
 
-    public final static String METHOD_HELLO = "HelloWorld";
+    public final static String METHOD_GET_USER_SIMPLE = "GetUserSimple";
 
     public final static String SOAP_ACTION_ADD = SOAP_ACTION + METHOD_ADD;
-    public final static String SOAP_ACTION_HELLO = SOAP_ACTION + METHOD_HELLO;
+    public final static String SOAP_ACTION_GET_USER_SIMPLE = SOAP_ACTION + METHOD_GET_USER_SIMPLE;
 }
