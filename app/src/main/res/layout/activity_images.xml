@@ -17,8 +17,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/imageView_Images_01"
-        android:background="@android:color/darker_gray" />
+        android:background="@android:color/darker_gray"
+        android:id="@+id/imageView_Images_01" />
 
     <ProgressBar
         style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Inverse"
@@ -32,4 +32,25 @@
         android:layout_alignRight="@+id/imageView_Images_01"
         android:layout_alignEnd="@+id/imageView_Images_01"
         tools:background="@android:color/holo_blue_light" />
+
+    <ImageView
+        android:layout_width="@dimen/modelPreviewImageSize"
+        android:layout_height="@dimen/modelPreviewImageSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/imageView_Images_02" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Images_progressBar_02"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imageView_Images_02"
+        android:layout_alignStart="@+id/imageView_Images_02"
+        android:layout_alignBottom="@+id/imageView_Images_02"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

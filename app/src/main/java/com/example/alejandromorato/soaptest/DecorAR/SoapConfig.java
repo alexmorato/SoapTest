@@ -12,6 +12,9 @@ public class SoapConfig {
 
     public final static String METHOD_GET_USER_SIMPLE = "GetUserSimple";
 
+    public final static String METHOD_GET_IMAGE = "GetImageData";
+
     public final static String SOAP_ACTION_ADD = SOAP_ACTION + METHOD_ADD;
     public final static String SOAP_ACTION_GET_USER_SIMPLE = SOAP_ACTION + METHOD_GET_USER_SIMPLE;
+    public final static String SOAP_ACTION_GET_IMAGE = SOAP_ACTION + METHOD_GET_IMAGE;
 }
