@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.alejandromorato.soaptest.AsyncTask.ConvertTemperatureTask;
 import com.example.alejandromorato.soaptest.DecorAR.Activities.DecorARActity;
+import com.example.alejandromorato.soaptest.DecorAR.Activities.ImagesActivity;
 import com.example.alejandromorato.soaptest.ServiceUtils.ConstantString;
 
 public class MainActivity extends Activity  {
@@ -30,6 +31,7 @@ public class MainActivity extends Activity  {
         btnCToF = (View) findViewById(R.id.btn_c_to_f);
         btnFToC = (View) findViewById(R.id.btn_f_to_c);
         btnToDecorAR = (View) findViewById(R.id.button_ir_a_DecoAR);
+        View btnToImages = (View) findViewById(R.id.Main_Button_To_Images);
         textConverted = (TextView) findViewById(R.id.txt_converted);
         input = (EditText) findViewById(R.id.txt_temp);
 
@@ -37,6 +39,12 @@ public class MainActivity extends Activity  {
         btnCToF.setOnClickListener(onCToFClick());
         btnFToC.setOnClickListener(onFtoCClick());
         btnToDecorAR.setOnClickListener(onToDecorARCClick());
+        btnToImages.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startImagesActivy();
+            }
+        });
     }
 
     private OnClickListener onCToFClick() {
@@ -76,6 +84,11 @@ public class MainActivity extends Activity  {
 
     private void startDecorARActivy() {
         Intent intent = new Intent(this, DecorARActity.class);
+        startActivity(intent);
+    }
+
+    private void startImagesActivy() {
+        Intent intent = new Intent(this, ImagesActivity.class);
         startActivity(intent);
     }
 

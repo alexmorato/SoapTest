@@ -2,9 +2,9 @@ package com.example.alejandromorato.soaptest.DecorAR;
 
 public class SoapConfig {
 
-    public final static String SOAP_ACTION = "http://tempuri.org/";
-    public final static String NAME_SPACE = "http://tempuri.org/";
-    public final static String URL = "http://192.168.2.138/ServiceApp/WebServiceTest.asmx";
+    public final static String SOAP_ACTION = "http://tempuri2.org/";
+    public final static String NAME_SPACE = "http://tempuri2.org/";
+    public final static String URL = "http://192.168.2.138/DecorAR/DecorARWebService.asmx";
 
     public final static String METHOD_ADD = "Add";
     public final static String METHOD_ADD_PARAM_A = "a";

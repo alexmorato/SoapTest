@@ -17,7 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DecorAR.Activities.DecorARActity"></activity>
+        <activity android:name=".DecorAR.Activities.DecorARActity" />
+        <activity android:name=".DecorAR.Activities.ImagesActivity"></activity>
     </application>
 
 </manifest>
