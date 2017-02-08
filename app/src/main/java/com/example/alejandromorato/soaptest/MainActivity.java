@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.example.alejandromorato.soaptest.AsyncTask.ConvertTemperatureTask;
 import com.example.alejandromorato.soaptest.DecorAR.Activities.DecorARActity;
 import com.example.alejandromorato.soaptest.DecorAR.Activities.ImagesActivity;
+import com.example.alejandromorato.soaptest.DecorAR.Activities.ListViewsActivity;
 import com.example.alejandromorato.soaptest.ServiceUtils.ConstantString;
 
 public class MainActivity extends Activity  {
@@ -32,6 +33,7 @@ public class MainActivity extends Activity  {
         btnFToC = (View) findViewById(R.id.btn_f_to_c);
         btnToDecorAR = (View) findViewById(R.id.button_ir_a_DecoAR);
         View btnToImages = (View) findViewById(R.id.Main_Button_To_Images);
+        View btnListViews = (View) findViewById(R.id.Main_Button_ListViews);
         textConverted = (TextView) findViewById(R.id.txt_converted);
         input = (EditText) findViewById(R.id.txt_temp);
 
@@ -43,6 +45,12 @@ public class MainActivity extends Activity  {
             @Override
             public void onClick(View v) {
                 startImagesActivy();
+            }
+        });
+        btnListViews.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startListViewActivy();
             }
         });
     }
@@ -89,6 +97,11 @@ public class MainActivity extends Activity  {
 
     private void startImagesActivy() {
         Intent intent = new Intent(this, ImagesActivity.class);
+        startActivity(intent);
+    }
+
+    private void startListViewActivy() {
+        Intent intent = new Intent(this, ListViewsActivity.class);
         startActivity(intent);
     }
 

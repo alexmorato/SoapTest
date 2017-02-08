@@ -57,4 +57,13 @@
         android:layout_toLeftOf="@+id/Main_Button_To_Images"
         android:layout_toStartOf="@+id/Main_Button_To_Images" />
 
+    <Button
+        android:text="ListViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Main_Button_ListViews"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button_ir_a_DecoAR"
+        android:layout_toStartOf="@+id/button_ir_a_DecoAR" />
+
 </RelativeLayout>

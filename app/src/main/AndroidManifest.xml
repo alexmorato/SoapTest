@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DecorAR.Activities.DecorARActity" />
-        <activity android:name=".DecorAR.Activities.ImagesActivity"></activity>
+        <activity android:name=".DecorAR.Activities.ImagesActivity" />
+        <activity android:name=".DecorAR.Activities.ListViewsActivity"></activity>
     </application>
 
 </manifest>
